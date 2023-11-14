@@ -1,0 +1,399 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-index {
+  background-color: #92a891;
+}
+
+header .desktop-nav {
+  display: none;
+}
+header #mobile-nav {
+  background-color: #e7e7e7;
+  font-size: 2rem;
+  height: 10rem;
+}
+header #mobile-nav .navbar-toggler {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+header #mobile-nav .navbar-toggler-icon {
+  width: 3rem;
+}
+header #mobile-nav .offcanvas-title {
+  font-family: "Estonia", cursive;
+  font-size: 8rem;
+  margin-left: 1rem;
+}
+
+#logotype-mobile {
+  font-family: "Estonia", cursive;
+  font-size: 3em;
+  padding-left: 1.5rem;
+}
+
+.slider-main-page {
+  margin-top: 9.9rem;
+}
+.slider-main-page #slider-main-page-img {
+  width: 100%;
+  height: 60%;
+}
+
+.our-products-container {
+  background-color: #000;
+}
+.our-products-container h2 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
+  font-size: 5rem;
+  line-height: 2;
+}
+.our-products-container .our-products-circle figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  padding: 1.4rem 10rem;
+}
+.our-products-container .our-products-circle figcaption {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.our-products-container .our-products-circle figcaption a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.icons-container {
+  height: 15rem;
+  background-color: #92a891;
+  padding-top: 4rem;
+}
+.icons-container .icons-container-vegan {
+  display: flex;
+  justify-content: space-around;
+}
+.icons-container .icons-container-text {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.7rem;
+  font-size: 2.3rem;
+  font-family: "DM Serif Display", serif;
+  color: #000;
+}
+
+.skin-info {
+  background-color: #000;
+}
+.skin-info .skin-info-text {
+  color: #fff;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  padding: 2rem 3.5rem;
+  text-align: justify;
+}
+.skin-info .skin-info-text h2 {
+  font-size: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+}
+.skin-info .skin-info-image img {
+  width: 100%;
+  height: 35rem;
+}
+
+.see-all-products {
+  background-color: #e7e7e7;
+}
+.see-all-products h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "DM Serif Display", serif;
+  padding-top: 3rem;
+}
+.see-all-products .see-all-products-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  margin: 2rem;
+}
+.see-all-products .see-all-products-images a {
+  text-decoration: none;
+  color: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+}
+.see-all-products .see-all-products-images a img {
+  width: 100%;
+}
+.see-all-products .see-all-products-images a .price {
+  text-align: center;
+}
+.see-all-products #see-all-button {
+  background-color: #000;
+  margin-left: 40%;
+  width: 15rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #f1ecec;
+}
+
+.newsletter-suscription {
+  background-color: #000;
+}
+.newsletter-suscription .newsletter-suscription-container h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem;
+}
+.newsletter-suscription .newsletter-suscription-container input {
+  width: 45%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 20%;
+  border-radius: 5px;
+}
+.newsletter-suscription .newsletter-suscription-container button {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.newsletter-suscription .newsletter-suscription-container button:hover {
+  background-color: #d6d3d3;
+}
+
+footer {
+  background-color: #000;
+  margin: 1.25em;
+  padding: 2.5em;
+}
+footer h2 {
+  font-family: "Estonia", cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+footer .footer-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .footer-list ul li a {
+  margin: 0 1.5em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.icons a {
+  padding: 0 0.625em;
+  text-decoration: none;
+}
+
+.copy p {
+  opacity: 50%;
+  text-align: center;
+  padding-top: 2.5em;
+  color: #fff;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  header #mobile-nav {
+    display: none;
+  }
+  header .desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1ecec;
+    height: 13rem;
+  }
+  header .desktop-nav .left-nav-desktop {
+    padding-top: 5.3rem;
+  }
+  header .desktop-nav .left-nav-desktop ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    font-family: "Josefin Slab", serif;
+  }
+  header .desktop-nav .left-nav-desktop ul li {
+    justify-content: space-around;
+    margin-left: 1.4rem;
+  }
+  header .desktop-nav .left-nav-desktop ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  header .desktop-nav .left-nav-desktop ul li a:hover {
+    color: #5c5c5c;
+  }
+  header .desktop-nav .center-nav-desktop h1 {
+    font-size: 8rem;
+    padding-top: 1.2rem;
+    font-family: "Estonia", cursive;
+  }
+  header .desktop-nav .right-nav-desktop {
+    padding-top: 6rem;
+  }
+  header .desktop-nav .right-nav-desktop a {
+    margin-right: 1rem;
+  }
+  header .desktop-nav .right-nav-desktop i {
+    margin-right: 0.8rem;
+  }
+  .slider-main-page {
+    margin: 0;
+  }
+  .slider-main-page #slider-main-page-img {
+    height: 70rem;
+  }
+  .our-products-container h1 {
+    font-size: 7rem;
+  }
+  .our-products-container .our-products-circle {
+    display: flex;
+  }
+  .our-products-container .our-products-circle figure img {
+    padding: 4rem;
+  }
+  .icons-container .icons-container-vegan {
+    margin: 0;
+    padding-top: 1.3rem;
+  }
+  .skin-info {
+    display: flex;
+    margin: 0 8rem 6rem 6rem;
+  }
+  .skin-info .skin-info-text {
+    padding: 8rem;
+  }
+  .skin-info .skin-info-text p {
+    padding: 0 2rem;
+    font-size: 2.5rem;
+  }
+  .skin-info .skin-info-image img {
+    width: 50rem;
+    height: 100%;
+  }
+  .see-all-products h2 {
+    font-size: 3.5rem;
+    padding-top: 4rem;
+  }
+  .see-all-products .see-all-products-images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .see-all-products .see-all-products-images .see-all-img p {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .newsletter-suscription .newsletter-suscription-container input {
+    margin-left: 25%;
+  }
+}
+body {
+  background-color: #e7e7e7;
+}
+
+#products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 800px) {
+  #products-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.product-box {
+  padding: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  transition: 200ms;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.product-box:hover {
+  translate: 0 -8px;
+}
+.product-box img {
+  width: 100%;
+}
+.product-box h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.product-box p {
+  font-size: 1.7rem;
+}
+.product-box button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.modal-container {
+  width: 40rem;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  position: static;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  z-index: 9;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+}
+
+.modal-header-tittle {
+  justify-self: start;
+}
+
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 1rem;
+}
+
+.modal-container > div > img {
+  height: 20rem;
+  width: 20rem;
+}/*# sourceMappingURL=styles.css.map */
