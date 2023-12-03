@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
 }
 .body-index {
-    background-color: #92a891;
+    background-color: #e7e7e7;
 }
 header {
     .desktop-nav  {
@@ -17,6 +17,7 @@ header {
         background-color: #e7e7e7;
         font-size: 2rem;
         height: 10rem;
+        position: relative;
         .navbar-toggler {
             height: 5rem;
             width: 5rem;
@@ -34,6 +35,33 @@ header {
         
     }
 }
+/*Buscador*/
+.ctn-bars-search {
+    display: none;
+    input {
+        height: 4rem;
+        width: 100%;
+        border: none;
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+    button {
+        padding: 0 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-family: 'DM Serif Display', serif;
+        letter-spacing: 3px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #333;
+        }
+    }
+}
+
 #logotype-mobile{
     font-family: 'Estonia', cursive;
     font-size: 3em;
@@ -42,43 +70,46 @@ header {
 
 }
 
-.slider-main-page {
-    margin-top: 9.9rem;
-    #slider-main-page-img {
-        width: 100%;
-        height: 60%;
-    }
+
+.slider-main-page-img {
+    overflow: hidden;
+   
+    
 }
 .our-products-container {
-    background-color: #000;
+    background-color: #778F66;
     
   h2 {
     font-family: 'DM Serif Display', serif;
     text-align: center;
     color: #fff;
-    padding-top: 3rem;
-    font-size: 5rem;
+    padding-top: 2.5rem;
+    font-size: 3rem;
     line-height: 2;
     
   }
   .our-products-circle {
     figure {
+        margin: 1rem 5rem;
         img {
             width: 100%;
             height: auto;
-            border-radius: 100%;
-            padding: 1.4rem 10rem;
+            border-radius: 30% 0;
+            padding: 2rem;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            background-color: #7ca560;
         }
     }
     figcaption {
         font-family: 'DM Serif Display', serif;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-bottom: 1rem;
+        margin-top: 2rem;
         a{
             text-decoration: none;
             color: #ffffff;
-            
+        
         }
     }
   }
@@ -86,8 +117,7 @@ header {
 
 .icons-container {
     height: 15rem;
-    background-color:#92a891 ;
-    padding-top: 4rem;
+    background-color:#e7e7e7 ;
     
     .icons-container-vegan {
         display: flex;
@@ -202,8 +232,8 @@ header {
 
  footer {
     background-color: #000;
-    margin: 1.25em;
     padding: 2.5em;
+    margin-top: 2rem;
   
     h2 {
       font-family: 'Estonia', cursive;
@@ -300,12 +330,9 @@ header {
             }
             
         }
-        .slider-main-page {
-            margin: 0;
-            #slider-main-page-img {
-                height: 70rem;
-            }
-        }
+    .carousel-inner {
+        height: 85vh;
+    }
     .our-products-container {
         h1 {
             font-size: 7rem;
@@ -327,7 +354,7 @@ header {
     }  
     .skin-info {
         display: flex;
-        margin: 0 8rem 6rem 6rem;
+        margin: 8rem 6rem;
         .skin-info-text {
             padding: 8rem;
             p {
@@ -377,12 +404,64 @@ header {
 body {
     background-color: #e7e7e7;
 }
+/* products */
+.categories {
+    font-family: 'DM Serif Display', serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    .products-tittle {
+        padding: 2rem;
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            padding-top: 3rem;
+            @media (min-width:800px){
+                font-size: 4.5rem;
+            }
+        }
+    }
+    .categories-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        a {
+            margin: 2rem;
+            text-decoration: none;
+            @media (min-width:800px){
+                margin: 1rem 2.4rem;
+            }
+           p {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            color: #000;
+            padding-top: 1.5rem;
+            @media (min-width:800px) {
+                    font-size: 3rem;
+                    padding: 0;
+                    margin-top: 1.3rem;
+            }
+
+           }
+            img {
+                width: 100%;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+            }
+
+        }
+        @media (min-width: 800px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+    }
+}
 
 #products-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
     @media (min-width:800px){
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 0;
     }
 }
 
@@ -410,10 +489,14 @@ body {
         font-size: 1.2rem;
         padding: 1rem;
         border-radius: 5px;
-
+    }
+    a {
+        text-decoration: none;
+        color: #000;
     }
 
 }
+
 .modal-container {
     width: 40rem;
     max-height: 88vh;
@@ -425,6 +508,7 @@ body {
     align-items: center;
     overflow: auto;
     z-index: 9;
+
 }
 
 
@@ -432,22 +516,127 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #000;
-    width: 100%;
+    width: 40rem;
     color: #fff;
 }
 .modal-header-tittle {
-    justify-self: start;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
 }
-.modal-container > .modal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin: 1rem;
-}
+.modal-container{
+    position: fixed;
+    left: 70%;
+    overflow-x: hidden;
 
-.modal-container > div > img {
-    height: 20rem;
-    width: 20rem;
+    .modal-content {
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        color: #000;
+        padding-bottom: 1rem;
+        
+        img {
+            width: 30rem;
+            height: 30rem;
+            margin-left: 4rem;
+            padding-top: 2rem;
+        }
+        h3 , p {
+            font-family: 'DM Serif Display', serif;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .modal-header-button {
+        cursor: pointer;
+    }
+    .total-content {
+        padding: 4.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'DM Serif Display', serif;
+    }
+    .delete-product {
+        margin-bottom: 2rem;
+        cursor: pointer;
+        margin-left: 35rem;
+    }
 }
+.cantidad-carrito {
+    background-color: rgb(186, 206, 185);
+    color: #000;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 1rem;
+    left: 84%;
+    position: absolute;
+    display: none;
+    
+}
+ .sumar , .restar {
+    cursor: pointer;
+    padding: 1.5rem;
+ }
+ 
+ .footer-of-products {
+    overflow: hidden;
+    height: 30%;
+    img {
+        width: 100%;
+        height: auto;
+        
+    }
+ }
+
+ .footer-of-products-info {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 2rem;
+    line-height: 1.8;
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        
+    }
+ }
+ .productDescriptionContainer {
+    
+    @media (min-width:800px){
+        display: flex;
+    }
+    .productDescriptionImg {
+        img {
+            width: 100%;
+            height: auto;
+            @media (min-width:800px){
+                width: 60rem;
+                margin: 2.5rem;
+            }
+        }
+    }
+    .productDescription {
+        @media (min-width:800px){
+            margin:  7rem;
+        }
+        margin-left: 1.4rem;
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            @media (min-width:800px) {
+                
+            }
+        }
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    button {
+        border-radius: 5px;
+        padding: 1rem;
+        &:hover {
+            background-color: #d6d3d3;
+        }
+    }
+     }
